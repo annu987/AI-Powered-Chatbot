@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #5efce8 0%, #736efe 100%);
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-container {
+  background: white;
+  width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: slideIn 0.6s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(to right, #ff4e50, #f9d423);
+  color: white;
+  margin: 0;
+}
+
+.chat-box {
+  padding: 1rem;
+  height: 300px;
+  overflow-y: auto;
+  background: #f4f4f4;
+  font-size: 1rem;
+  color: #333;
+}
+
+.input-area {
+  display: flex;
+  border-top: 1px solid #ccc;
+  padding: 0.8rem;
+  background: #fff;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background: #6a11cb;
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.user-msg, .bot-msg {
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.user-msg {
+  text-align: right;
+  color: #2b7a78;
+}
+
+.bot-msg {
+  text-align: left;
+  color: #17252a;
+}
